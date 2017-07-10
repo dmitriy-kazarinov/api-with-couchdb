@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Api with couchdb</title>
+</head>
+<body>
+  <p>Users</p>
+  <ul>
+    <% users.forEach(function(user){%>
+      <li>
+        <p><%= user.value.name %></p>
+        Info:
+        <ul>
+          <li><%= user.value.username %></li>
+          <li><%= user.value.email %></li>
+        </ul>
+      </li>
+    <%})%>
+  </ul>
+  <p>Add new user</p>
+  <form action="/user/add" method="post">
+    <input type="text" name="name" placeholder="Write Name*" required>
+    <input type="text" name="email" placeholder="Write Email*" required>
+    <input type="text" name="username" placeholder="Write Username*" required>
+    <button type="submit">Add User</button>
+  </form>
+</body>
+</html>
