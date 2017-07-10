@@ -25,7 +25,7 @@
     "couchdb",
     "express"
   ],
-  "author": "Dmitry Dulin",
+  "author": "Dmitry Dulin <dulin.developer@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dulin666/api-with-couchdb/issues"
